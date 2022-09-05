@@ -1,33 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Movie Ratings App</title>
 </head>
+
 <body>
-    
+
     <header>
         <h1>BC Ratings</h1>
-        <form  id="form">
+        <form id="form">
             <input type="text" placeholder="Search" id="search" class="search">
         </form>
     </header>
     <div id="tags"></div>
     <div id="navigation-bar" class="overview">
 
-        <!-- Button to close the overview navigation -->
-        <a href="javascript:void(0)" class="closebutton" onclick="closeNav()">&times;</a>
-      
-        <!-- Overview content -->
-        <div class="overview-content" id="overview-content"></div>
-        
-        <a href="javascript:void(0)" class="arrow left-arrow" id="left-arrow">&#8656;</a> 
-        
-        <a href="javascript:void(0)" class="arrow right-arrow" id="right-arrow" >&#8658;</a>
 
-      </div>
+        <a href="javascript:void(0)" class="closebutton" onclick="closeNav()">&times;</a>
+
+
+        <div class="overview-content" id="overview-content"></div>
+
+        <a href="javascript:void(0)" class="arrow left-arrow" id="left-arrow">&#8656;</a>
+
+        <a href="javascript:void(0)" class="arrow right-arrow" id="right-arrow">&#8658;</a>
+
+    </div>
     <main id="main"></main>
     <div class="pages">
         <div class="page" id="prev">Previous Page</div>
@@ -38,4 +44,5 @@
 
     <script src="script.js"></script>
 </body>
+
 </html>

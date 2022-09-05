@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;700&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #000000;
+    font-family: 'Oleo Script', cursive;
+    margin: 0;
+}
+
+
+header{
+    background-color: #4B0082;
+    padding:15px;
+    display:flex;
+    justify-content: space-between;
+    
+}
+header h1{
+    color: #fff;
+}
+
+.search{
+    font-family:'Oleo Script', cursive;
+    color: #fff;
+    background-color: transparent;
+    border: 2px solid #fff;
+    padding:10px 20px;
+    border-radius: 25px;
+    font-size: 16px;
+    
+
+}
+.search::placeholder{
+    color: #fff;
+    font-weight: 100;
+    font-style: italic;
+}
+
+.search:focus{
+    outline:0;
+    
+}
+
+
+main{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.pages{
+    display:flex;
+    margin:20px 40px;
+    align-items: center;
+    justify-content: space-evenly;
+    color:white;
+}
+
+.current{
+    background-color: #4B0082;
+    padding: 10px 20px;
+    border-radius: 50%;
+    background-color: #4B0082;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+
+/* The Overlay (background) */
+.overview {
+    /* Height & width depends on how you want to reveal the overlay (see JS below) */   
+    height: 100%;
+    width: 0;
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    background-color: rgb(0,0,0); /* Black fallback color */
+    background-color: rgba(0,0,0, 0.9); /* Black w/opacity */
+    overflow-x: hidden; /* Disable horizontal scroll */
+    transition: 0.5s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
+  }
+  
+  /* Position the content inside the overlay */
+  .overview-content {
+    position: relative;
+    top: 10%; /* 25% from the top */
+    width: 100%; /* 100% width */
+    text-align: center; /* Centered text/links */
+    margin-top: 30px; /* 30px top margin to avoid conflict with the close button on smaller screens */
+  }
+  
+  /* The navigation links inside the overlay */
+  .overview a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: #818181;
+    display: block; /* Display block instead of inline */
+    transition: 0.3s; /* Transition effects on hover (color) */
+  }
+  
+  /* When you mouse over the navigation links, change their color */
+  .overview a:hover, .overview a:focus {
+    color: #f1f1f1;
+  }
+  
+  /* Position the close button (top right corner) */
+  .overview .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+  }
+  
+  /*media queries*/
+  @media screen and (max-height: 450px) {
+    .overview a {font-size: 20px}
+    .overview .closebutton {
+      font-size: 40px;
+      top: 15px;
+      right: 35px;
+    }
+  }
+
+
+  .embed.hide{
+      display: none;
+  }
+
+  .embed.show{
+      display: inline-block;
+  }
+
+  .arrow{
+      position: absolute;
+      font-size: 40px;
+  }
+
+  .arrow.left-arrow{
+      top:50%;
+      left:5%;
+      transform: translateY(-50%);
+  }
+
+  
+  .arrow.right-arrow{
+    top:50%;
+    transform: translateY(-50%);
+    right:5%;
+}
+
+.dots{
+    margin-top: 30px;
+}
+
+.dots .dot {
+    padding: 5px 15px;
+    border-radius: 50%;
+    border: 5px solid var(--secondary-color);
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+    margin: 5px;
+}
+
+.dots .dot.active{
+    background-color: #4B0082;
+}
+
+p{
+    bottom: 0;
+    position: fixed;
+    margin-top: 130px;
+    color: #fff;
+    border-radius: 3px;
+    padding: 12px 22px;
+    z-index: 1000;
+}
