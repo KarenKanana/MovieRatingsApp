@@ -1,4 +1,4 @@
-# Movies' Ratings APP
+# Movies' Ratings App
 
 ## Table of Contents
 - [Project Description](#project-description)
